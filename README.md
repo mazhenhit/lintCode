@@ -1,0 +1,2 @@
+# lintCode
+work hard
