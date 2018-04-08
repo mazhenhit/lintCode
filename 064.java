@@ -7,15 +7,15 @@ public class Solution {
      * @return: nothing
      */
     public void mergeSortedArray(int[] A, int m, int[] B, int n) {
-		int length = m + n;
-		for(int i = length - 1; i >= 0; i--) {
-			if(m > 0 && n > 0) {
-			    A[i] = A[m - 1] > B[n - 1] ? A[m-- - 1] : B[n-- - 1];
-			} else if(m > 0) {
-			    break;
-			} else if(n > 0) {
-			    A[i] = B[n-- - 1];
-			}
-		}
+	int length = m + n;
+	for(int i = length - 1; i >= 0; i--) {
+            if(m > 0 && n > 0) {
+                A[i] = A[m - 1] > B[n - 1] ? A[m-- - 1] : B[n-- - 1];
+            } else if(m > 0) {
+                break;
+            } else if(n > 0) {
+                A[i] = B[n-- - 1];
+	    }
+	}
     }
 }
