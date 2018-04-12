@@ -6,11 +6,9 @@ public class Solution {
      */
     public boolean compareStrings(String A, String B) {
 		int[] a = new int[26];
-		int[] b = new int[26];
 		
 		for(int i = 0; i < 26; i++) {
 			a[i] = 0;
-			b[i] = 0;
 		}
 		
 		for(int i = 0, aLen = A.length(); i < aLen; i++) {
