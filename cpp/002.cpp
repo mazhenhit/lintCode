@@ -6,23 +6,11 @@ public:
      */
     long long trailingZeros(long long n) {
         // write your code here, try to do it without arithmetic operators.
-        if(n < 0)
-            n = -n;
-
-        int num = 0;
-        while(n)
-        {
-            if(n % 5 == 0)
-            {
-                int tmp = n;
-                while(tmp % 5 == 0)
-                {
-                    num++;
-                    tmp = tmp / 5;
-                }
-            }
-            n--;
-        }
-        return num;
+        long sum = 0;
+		while (n > 0 ) {
+			sum += n / 5;
+			n = n / 5;
+		}
+		return sum;
     }
 };
